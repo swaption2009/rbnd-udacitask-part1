@@ -1,0 +1,8 @@
+Feature #1: rename_list
+This feature allows user to rename the ToDoList title
+
+Feature #2: completed?
+This feature will return if an Item has been completed
+
+Feature #3: change_status!
+This feature will toggle boolean value of the completed_status of an item

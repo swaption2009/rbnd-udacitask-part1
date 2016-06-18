@@ -11,6 +11,11 @@ class ToDoList
     item = Item.new(new_item)
     @items.push(item)
   end
+
+  # Feature 1
+  def rename_list(name)
+    @title = name
+  end
 end
 
 class Item
@@ -19,5 +24,15 @@ class Item
   def initialize(description)
     @description = description
     @completed_status = false
+  end
+
+  # Feature 2
+  def completed?
+    @completed_status
+  end
+
+  # Feature 3
+  def change_status!
+    @completed_status = !@completed_status
   end
 end
