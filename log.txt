@@ -1,0 +1,25 @@
+commit e62f43cfc6acf3a8216ac9b01810998b4692b549
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Sat Jun 18 02:20:25 2016 -0700
+
+    add 3 new features (see "new_features.txt")
+    
+    - Feature #1: rename_list
+    - Feature #2: completed?
+    - Feature #3: change_status!
+
+commit 253a38aa23897bc8a997cab04c2b74170fd51665
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Sat Jun 18 01:36:02 2016 -0700
+
+    complete codes in todolist.rb and udacitask.rb
+    
+    - rename filename (remove _starter)
+    - define instance variables in methods in ToDoList and Item classes
+    - complete tasks in udacitask.rb file
+
+commit 29c242e0a908ae35d7cadf842ed89ba822a72fcf
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Fri Jun 17 01:23:57 2016 -0700
+
+    initial upload
