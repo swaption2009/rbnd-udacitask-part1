@@ -1,8 +1,8 @@
-Feature #1: rename_list
-This feature allows user to rename the ToDoList title
+Feature #1: progress_report
+This feature allows users to see percentage completion in their to-do list.
 
-Feature #2: completed?
-This feature will return if an Item has been completed
+Feature #2: sort_by_item_name
+This feature allows users to sort item list by name.
 
-Feature #3: change_status!
-This feature will toggle boolean value of the completed_status of an item
+Feature #3: item_time_report
+This feature shows when an item is created and how long it has lapsed.
