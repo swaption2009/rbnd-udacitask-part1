@@ -1,3 +1,29 @@
+commit ec7a744107ffd3abbe60c16456aa3049ab7d0060
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Sat Jun 18 21:35:34 2016 -0700
+
+    add more methods from rubric and 3 additional features
+    
+    rubric:
+    - add_item
+    - delete_item
+    - change_status!
+    - name_list
+    - rename_list
+    - print_list
+    - completed?
+    
+    3 new features:
+    - progress_report
+    - sort_by_item_name
+    - item_time_report
+
+commit 790daab7364dcc61472c6742eedd00ab68da2587
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Sat Jun 18 02:20:47 2016 -0700
+
+    create git log
+
 commit e62f43cfc6acf3a8216ac9b01810998b4692b549
 Author: swaption2009 <swaption2009@gmail.com>
 Date:   Sat Jun 18 02:20:25 2016 -0700
