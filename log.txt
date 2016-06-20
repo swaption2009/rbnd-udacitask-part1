@@ -1,3 +1,22 @@
+commit 7f4258e0a2958c916a6e814d1f564b7a53c5f059
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Mon Jun 20 10:40:18 2016 -0700
+
+    re-submission
+    
+    1) [suggestion] move part of add_item to udacitask.rb
+    2) [suggestion] add logic to check entry doesn’t exceed array count
+    3) [suggestion] remove rename_list method and use attr_accessor to
+    update title
+    4) [suggestion] improve sort! method
+    5) [required] add print_item method and refactor print_list method
+
+commit b4d8a5e98c6f9ae93648242e8fbfa55336e6f36e
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Sat Jun 18 21:36:30 2016 -0700
+
+    final git log.txt
+
 commit ec7a744107ffd3abbe60c16456aa3049ab7d0060
 Author: swaption2009 <swaption2009@gmail.com>
 Date:   Sat Jun 18 21:35:34 2016 -0700
