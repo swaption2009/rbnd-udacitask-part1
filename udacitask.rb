@@ -7,7 +7,13 @@ my_list = ToDoList.new(new_name)
 puts "Thank you! You've created " + new_name + " to-do list"
 
 # Add four new items
-my_list.add_item
+puts "How many to-do items do you have?"
+number_of_items = gets.chomp.to_i
+number_of_items.times do |item|
+  puts "Enter your to-do item: "
+  to_do_item = gets.chomp.to_s
+  my_list.add_item(to_do_item)
+end
 
 # Print the list
 my_list.print_list
@@ -31,7 +37,8 @@ my_list.change_status!
 my_list.print_list
 
 # Update the title of the list
-my_list.rename_list
+puts "Enter a new name of the list: "
+my_list.title = gets.chomp.to_s
 
 # Print the list
 my_list.print_list

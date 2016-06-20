@@ -7,21 +7,19 @@ class ToDoList
     @items = Array.new
   end
 
-  def add_item
-    puts "How many to-do items do you have?"
-    number_of_items = gets.chomp.to_i
-    number_of_items.times do |item|
-      puts "Enter your to-do item: "
-      to_do_item = gets.chomp.to_s
-      item = Item.new(to_do_item)
-      @items.push(item)
-    end
+  def add_item(item)
+    item = Item.new(item)
+    @items << item
   end
 
   def delete_item
-    puts "Which item number do you like to delete? (enter a task_id number): " if @items.count > 1
+    puts "Which item number do you like to delete? (enter a task_id number): "
     del_item = gets.chomp.to_i
-    @items.delete_at(del_item-1)
+    if del_item > @items.count
+      puts "invalid entry"
+    else
+      @items.delete_at(del_item-1)
+    end
   end
 
   def change_status!
@@ -31,18 +29,14 @@ class ToDoList
     puts "Congratulations! " + @items[completed_item].description + " is completed"
   end
 
-  def rename_list
-    puts "Enter new name of the list: " if @items.count > 1
-    name = gets.chomp.to_s
-    @title = name
-  end
-
   def print_list
     puts "*" * 30
     puts @title
     puts "*" * 30
-    @items.each { |item| puts item.description, item.completed_status ? "Status: Done" : "Status: Not Done" }
-end
+    @items.each do |item|
+      item.print_item(item)
+    end
+  end
 
   # Feature 1
   def progress_report
@@ -53,7 +47,7 @@ end
 
   # Feature 2
   def sort_by_item_name
-    sorted_list = @items.sort_by! { |item| item.description }
+    sorted_list = @items.sort! { |x,y| x.to_s <=> y.to_s }
     sorted_list.each { |item| puts item.description }
   end
 end
@@ -69,6 +63,10 @@ class Item
 
   def completed?
     @completed_status
+  end
+
+  def print_item(item)
+    puts item.description, item.completed_status ? "Status: Done" : "Status: Not Done"
   end
 
   # Feature 3
